@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WAHR — Full Stack Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700&family=Unbounded:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=5" />
+  <link rel="stylesheet" href="assets/idcard/idcard.css" />
+</head>
+<body>
+  <!-- Video: arranca solo en bucle a pantalla completa y se vuelve logo fijo -->
+  <div class="video-wrap" id="videoWrap">
+    <video id="bgVideo" autoplay muted loop playsinline preload="auto">
+      <source src="assets/logo.mp4" type="video/mp4" />
+    </video>
+    <div class="video-grain"></div>
+  </div>
+
+  <!-- Espacio de intro: solo el video, sin nada debajo -->
+  <header class="hero" id="hero" aria-hidden="true"></header>
+
+  <main class="content">
+    <section class="block" id="about">
+      <span class="index">01 — El estudio</span>
+      <h1 class="block-title">Somos desarrolladores <span class="hl">Full Stack</span>.</h1>
+      <p class="block-text">
+        Construimos productos digitales de extremo a extremo: desde la
+        interfaz y la experiencia, hasta la lógica de servidor, bases de
+        datos y despliegue. Nuestro equipo escribe código limpio,
+        escalable y con alma visual.
+      </p>
+      <div class="stats">
+        <div><strong>+6</strong><span>años de equipo</span></div>
+        <div><strong>End-to-end</strong><span>front + back</span></div>
+        <div><strong>CI/CD</strong><span>despliegue continuo</span></div>
+      </div>
+    </section>
+
+    <section class="block" id="stack">
+      <span class="index">02 — Stack & herramientas</span>
+      <h2 class="block-title">Trabajamos con las mejores.</h2>
+      <div class="tools" id="tools"></div>
+    </section>
+
+    <section class="block" id="services">
+      <span class="index">03 — Servicios</span>
+      <h2 class="block-title">Lo que resolvemos.</h2>
+      <div class="services">
+        <div class="service">
+          <span class="s-check">✓</span>
+          <div class="s-body">
+            <h3>Landing Pages</h3>
+            <p>Para captar clientes.</p>
+          </div>
+        </div>
+        <div class="service">
+          <span class="s-check">✓</span>
+          <div class="s-body">
+            <h3>Sitios Corporativos</h3>
+            <p>Para empresas.</p>
+          </div>
+        </div>
+        <div class="service">
+          <span class="s-check">✓</span>
+          <div class="s-body">
+            <h3>Tiendas Online</h3>
+            <p>Con carrito y pagos.</p>
+          </div>
+        </div>
+        <div class="service">
+          <span class="s-check">✓</span>
+          <div class="s-body">
+            <h3>Dashboards</h3>
+            <p>Paneles administrativos.</p>
+          </div>
+        </div>
+        <div class="service">
+          <span class="s-check">✓</span>
+          <div class="s-body">
+            <h3>Sistemas de Turnos</h3>
+            <p>Barberías, clínicas, gimnasios.</p>
+          </div>
+        </div>
+        <div class="service">
+          <span class="s-check">✓</span>
+          <div class="s-body">
+            <h3>Automatización</h3>
+            <p>WhatsApp, Emails, APIs.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="process">
+      <span class="index">04 — Proceso de trabajo</span>
+      <h2 class="block-title">Cómo trabajamos.</h2>
+      <div class="process">
+        <div class="step">
+          <span class="step-num">01</span>
+          <h3>Reunión</h3>
+          <p>Escuchamos tu idea y definimos objetivos.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">02</span>
+          <h3>Diseño</h3>
+          <p>Prototipamos la experiencia y la estética.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">03</span>
+          <h3>Desarrollo</h3>
+          <p>Construimos el producto, front y back.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">04</span>
+          <h3>Pruebas</h3>
+          <p>Validamos cada detalle en varios dispositivos.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">05</span>
+          <h3>Entrega</h3>
+          <p>Publicamos y te dejamos todo listo.</p>
+        </div>
+        <div class="step">
+          <span class="step-num">06</span>
+          <h3>Soporte</h3>
+          <p>Seguimos cerca para lo que necesites.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="block" id="projects">
+      <span class="index">05 — Proyectos</span>
+      <h2 class="block-title">Algunos sitios que construimos.</h2>
+      <div class="projects">
+        <a class="project" href="https://www.bestialflybar.com.ar/" target="_blank" rel="noopener">
+          <span class="p-num">01</span>
+          <div class="p-body">
+            <h3>Bestial Fly Bar</h3>
+            <p>Sitio web para el bar: identidad, menú y reservas online.</p>
+          </div>
+          <span class="p-arrow">↗</span>
+        </a>
+        <a class="project" href="https://cafecito.com.ar/" target="_blank" rel="noopener">
+          <span class="p-num">02</span>
+          <div class="p-body">
+            <h3>Cafecito</h3>
+            <p>Plataforma de pagos y comercio para emprendedores.</p>
+          </div>
+          <span class="p-arrow">↗</span>
+        </a>
+        <a class="project" href="https://www.palosantohotel.com/" target="_blank" rel="noopener">
+          <span class="p-num">03</span>
+          <div class="p-body">
+            <h3>Palo Santo Hotel</h3>
+            <p>Web institucional de hotel: habitaciones, galería y reservas.</p>
+          </div>
+          <span class="p-arrow">↗</span>
+        </a>
+        <a class="project" href="http://www.cantinapalermo.com/" target="_blank" rel="noopener">
+          <span class="p-num">04</span>
+          <div class="p-body">
+            <h3>Cantina Palermo</h3>
+            <p>Sitio para cantina: carta, historia y contacto.</p>
+          </div>
+          <span class="p-arrow">↗</span>
+        </a>
+        <a class="project" href="http://www.kiddo.com.ar/" target="_blank" rel="noopener">
+          <span class="p-num">05</span>
+          <div class="p-body">
+            <h3>Kiddo</h3>
+            <p>Web para marca infantil: catálogo y experiencia de marca.</p>
+          </div>
+          <span class="p-arrow">↗</span>
+        </a>
+      </div>
+    </section>
+
+    <section class="block" id="card">
+      <span class="index">06 — Mi tarjeta</span>
+      <h2 class="block-title">Así me presento.</h2>
+      <div id="id-card-root" class="id-card-mount"></div>
+    </section>
+
+    <section class="block" id="contact">
+      <span class="index">07 — Contacto</span>
+      <h2 class="block-title big">Hablemos.</h2>
+      <p class="block-text">Estamos disponibles para proyectos, colaboraciones y retos nuevos.</p>
+
+      <div class="socials-grid">
+        <a class="social-card" href="https://github.com/knmaxi888-hash" target="_blank" rel="noopener">
+          <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub" />
+          <span>GitHub</span>
+        </a>
+        <a class="social-card" href="https://www.linkedin.com/in/maxi-romero-055242419/" target="_blank" rel="noopener">
+          <svg class="si" viewBox="0 0 24 24" width="30" height="30" fill="#0a66c2" role="img" aria-label="LinkedIn"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
+          <span>LinkedIn</span>
+        </a>
+        <a class="social-card" href="https://www.instagram.com/maxij._/" target="_blank" rel="noopener">
+          <img src="https://cdn.simpleicons.org/instagram/e1306c" alt="Instagram" />
+          <span>Instagram</span>
+        </a>
+        <a class="social-card" href="https://wa.me/543718652792" target="_blank" rel="noopener">
+          <img src="https://cdn.simpleicons.org/whatsapp/25d366" alt="WhatsApp" />
+          <span>WhatsApp</span>
+        </a>
+      </div>
+
+      <footer class="foot">© 2026 WAHR — Estudio de desarrollo & diseño.</footer>
+    </section>
+  </main>
+
+  <!-- Botones flotantes sobre la intro (al final para pintar encima de todo) -->
+  <nav class="intro-actions" id="introActions" aria-label="Acciones">
+    <a class="cta" href="#projects">Ver proyectos</a>
+    <a class="cta" href="#contact">Contactarme</a>
+    <a class="cta cta-solid" href="assets/cv.pdf" download>Descargar CV</a>
+  </nav>
+
+  <script src="script.js"></script>
+  <script type="module" src="assets/idcard/idcard.js"></script>
+</body>
+</html>
