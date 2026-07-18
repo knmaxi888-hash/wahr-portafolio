@@ -64,13 +64,14 @@ body.scrolled .video-wrap {
 /* ---------- Mount de la tarjeta de desarrollador (React) ---------- */
 .id-card-mount {
   margin-top: 3.5rem;
-  padding: clamp(2rem, 6vw, 5rem) 1rem;
+  padding: clamp(3rem, 8vw, 7rem) 1rem;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 .id-card-mount main,
 .id-card-mount .relative { width: 100%; }
-.id-card-mount .min-h-screen { min-height: auto; padding-top: 1rem; padding-bottom: 1rem; }
+.id-card-mount .min-h-screen { min-height: auto; padding-top: 0; padding-bottom: 0; }
 
 /* ---------- Intro: solo el video ---------- */
 .hero {
