@@ -62,16 +62,17 @@ body.scrolled .video-wrap {
 }
 
 /* ---------- Mount de la tarjeta de desarrollador (React) ---------- */
+.card-section {
+  max-width: none;
+  overflow: visible;
+}
 .id-card-mount {
   margin-top: 3.5rem;
   padding: clamp(3rem, 8vw, 7rem) 1rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: block;
+  width: 100%;
+  overflow: visible;
 }
-.id-card-mount main,
-.id-card-mount .relative { width: 100%; }
-.id-card-mount .min-h-screen { min-height: auto; padding-top: 0; padding-bottom: 0; }
 
 /* ---------- Intro: solo el video ---------- */
 .hero {
